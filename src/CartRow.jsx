@@ -1,7 +1,6 @@
 import React,{ useEffect,useState,memo }  from "react";
 import { RxCrossCircled } from "react-icons/rx";
 
-
 function CartRow({cart,quant,dummy_quan}){
   const [quantity,setQuantity] = useState(quant);
 
@@ -42,5 +41,6 @@ function CartRow({cart,quant,dummy_quan}){
     </div>
   );
 }
+
 
 export default memo(CartRow);

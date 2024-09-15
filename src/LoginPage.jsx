@@ -82,12 +82,7 @@ export function LoginPage({handleSubmit,values,errors,touched,handleChange,handl
             >
               LOGIN
             </button>
-            {/* <div className="mt-4">
-              <Link to={"/forgotPassword"} className="text-white hover:font-bold">
-                Forgot password?
-              </Link>
-            </div> */}
-            <div className="mt-3 text-white">
+            <div className="mt-3 text-black">
               Don't have an account? 
               <Link to={"/SignUp"} className= "underline hover:font-bold"> Sign up </Link>
             </div>

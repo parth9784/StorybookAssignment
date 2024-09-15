@@ -10,11 +10,9 @@ import { withCart } from './withProvider';
 function ProductDetail({ addToCart }){  
 
   let id = +useParams().id;
-
   const [product,setProduct] = useState(null);
   const [loading,setLoading] = useState(true);
   const [count,setCount] = useState(1);
-  
   useEffect(function(){
     const data = getProductData(id);
     setCount(1);
@@ -48,7 +46,7 @@ function ProductDetail({ addToCart }){
       <Link to="/">
         <HiArrowUturnLeft className="text-2xl"/>
       </Link>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSvId9ySl-OGP2RQpHH4OOeHelOMCqPP35Xw&s" alt="coffee mug" className="max-w-[300px] ml-2.5" />
+      <img src="https://picsum.photos/200/300" alt="coffee mug" className="max-w-[300px] ml-2.5" />
       <div className="flex flex-col gap-y-6">
         <div className="flex flex-col gap-y-1">
           <h1 className="mr-2 text-2xl">{product.title}</h1>
